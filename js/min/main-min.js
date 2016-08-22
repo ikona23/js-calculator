@@ -1,0 +1,1 @@
+function sendButton(n){document.getElementById("num").value+=n,console.log(num.value)}

@@ -1,16 +1,15 @@
-function sendButton(val){
-document.getElementById('num').value = val;
-}
-//The querySelector() method only returns the first element that matches the specified selectors. To return all the matches, use the querySelectorAll() method instead.
-var input = document.querySelector("#mainInput")
-var buttons = document.querySelectorAll("button.noBtn")
 
-for (i = 0; i < buttons.length; i++) {
-buttons[i].addEventListener("click", function(event) {
-  input.value = input.value + event.currentTarget.value
-})
+
+function sendButton(val){
+document.getElementById('num').value += val;
+console.log(num.value);
 }
-// }
+
+
+
+
+
+
 
 // function combine() {
 //   var comb = eval(document.form.result.value)
